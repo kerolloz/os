@@ -2,7 +2,7 @@
 
 ## Create A Simple Linux Shell
 
-The shell taks user input, parse it, fork() & exec() & print_the_output(), ...
+The shell takes user input, parse it, fork() & exec(user input) & print_the_output() and so on...
 
 ## Use Mutux lock
 
