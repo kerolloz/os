@@ -16,8 +16,7 @@ void *count(void *args) {
     sum++;
 
   pthread_mutex_unlock(&lock);
-  // after finishing unlock this section so other
-  // threads, can access it
+  // after finishing unlock this section so, other threads can access it
   return NULL;
 }
 
@@ -35,4 +34,6 @@ int main() {
     pthread_join(threads[i], NULL);
 
   printf("%lld\n", sum);
+
+  return 0;
 }
