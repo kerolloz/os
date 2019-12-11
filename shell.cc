@@ -35,9 +35,9 @@ struct command {
   command(string s) : command_string(s) {
     vector<string> args;
     split(args);
-    for (int i = 0; i < args.size(); i++) {
-      char *arg = const_cast<char *>(args[i].c_str());
-      argschar.push_back(arg);
+    for (const string &arg : args) {
+      char *str = const_cast<char *>(arg.c_str());
+      argschar.push_back(str);
     }
   }
   void split(vector<string> &commands) {
