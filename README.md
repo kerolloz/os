@@ -15,3 +15,4 @@ should increment a global variable, the value of the variable should equal to 5 
 - run `make` command in your terminal to compile all the files
 - `./shell` to run the shell program
 - `./sum` to run the sum program
+- `./pipe` to run the pipe program
