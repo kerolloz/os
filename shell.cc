@@ -56,7 +56,7 @@ struct command {
     if (tmp_str.size())
       commands.push_back(tmp_str);
   }
-  const char *get_command() { return argschar[0]; }
+  char *get_command() { return argschar[0]; }
   char *const *get_args() { return argschar.data(); }
   void execute() {
     /*
